@@ -1,17 +1,143 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocarro | Experiencias Digitales</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <a href="https://www.figma.com/design/ssmaDV7bGOhgxvn8pv5dkp/Porfolio-DAW?node-id=0-1&t=aUIqInxc33HSukHy-1"
-        target="_blank">GUÍA DE ESTILO</a>
-    <a href="https://www.figma.com/design/dGXLhIrlVoqcoOdbemYKo9/Gu%C3%ADa-estilo-Chocarro?node-id=0-1&t=IfYeeiDLeK1GYLHZ-1"
-        target="_blank">PORFOLIO</a>
+  <header class="header">
+    <div class="container header-container">
+     <img class="logo" src="Imagenes/logo.png" alt=""> 
+      <nav class="nav" id="nav">
+        <a href="#" class="nav-link">Servicios</a>
+        <a href="#" class="nav-link">Proyectos</a>
+        <a href="#" class="nav-link">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Diseñamos experiencias y productos digitales que transforman ideas en resultados.</h1>
+        <h3 class="hero-subtitle">Impulsa tu negocio con soluciones digitales efectivas</h3>
+        <div class="hero-buttons">
+          <button class="btn-primary">SERVICIOS</button>
+          <button class="btn-outline">ABOUT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>CARACTERÍSTICAS</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Innovación</h3>
+            <p>Usamos las últimas tecnologías para mantenerte siempre un paso adelante.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Automatización</h3>
+            <p>Optimizamos tus procesos para que ahorres tiempo y recursos.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Crecimiento</h3>
+            <p>Impulsamos tu presencia digital y te ayudamos a escalar tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <h1>About</h1>
+          <h3>
+            <b>Diseño, desarrollo y estrategia enfocados en crear experiencias digitales de alto impacto.</b>
+          </h3>
+          <div class="about-button">
+            <button class="btn-primary">DESCUBRE MÁS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2>ALGUNOS PROYECTOS</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img"></div>
+            <h3>Title</h3>
+            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>¿Listo para transformar tu marca?</h2>
+        <p class="p2">Contáctanos hoy y déjanos ayudarte a alcanzar tus objetivos digitales.</p>
+        <button class="btn-white">CONTACTO</button>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <!-- Columna izquierda: icono grande arriba + fila de iconos debajo -->
+    <div class="left-column">
+      <a href="#" class="brand-icon social-icon"><i class="fa-brands fa-figma"></i></a>
+
+      <div class="small-icons">
+        <a href="https://x.com/Luciaa_garrido" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/chocarroo/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lucía-garrido-chocarro-7401b2314/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Texto centrado, ocupa el espacio central -->
+    <p class="footer-text">© 2025 Chocarro. Todos los derechos reservados.</p>
+
+    <!-- columna derecha vacía para equilibrio (opcional) -->
+    <div class="right-space" aria-hidden="true"></div>
+  </div>
+</footer>
+
 
 </body>
-
 </html>

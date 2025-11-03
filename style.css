@@ -1,0 +1,347 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --color-dark: #1E1E1E;
+  --color-light: #FBFBFB;
+  --color-gray: #f2f2f2;
+  --color-border: #ddd;
+  --container-width: 1200px;
+  --spacing-section: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  color: #606060;
+}
+
+.p2{
+  margin-top: 20px;
+  color: #FBFBFB;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background: var(--color-light);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  width: 200px;  
+    height: auto; 
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+/* HERO */
+.hero {
+  background: var(--color-gray);
+  padding: var(--spacing-section) 0;
+}
+
+.hero h1 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  max-width: 650px;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  color: #444;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* BUTTONS */
+.btn-primary,
+.btn-outline,
+.btn-white {
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+}
+
+.btn-outline {
+  border: 1px solid var(--color-dark);
+  background: transparent;
+  color: var(--color-dark);
+}
+
+.btn-white {
+  background: var(--color-light);
+  color: var(--color-dark);
+  border: none;
+}
+
+/* FEATURES */
+.features {
+  background: var(--color-light);
+  padding: var(--spacing-section) 0;
+  text-align: center;
+}
+
+.features h2 {
+  text-transform: uppercase;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--color-gray);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* ABOUT */
+.about {
+  background: var(--color-gray);
+  padding: var(--spacing-section) 0;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.about-button {
+  text-align: right;
+}
+
+/* PROJECTS */
+.projects {
+  background: var(--color-light);
+  padding: var(--spacing-section) 0;
+}
+
+.projects h2 {
+  text-transform: uppercase;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: var(--color-light);
+}
+
+.project-img {
+  background: var(--color-gray);
+  width: 100%;
+  height: 180px;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA */
+.cta {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: var(--spacing-section) 1rem;
+}
+
+.cta button {
+  margin-top: 1.5rem;
+}
+
+/* FOOTER */
+/* footer base */
+.footer {
+  background: #fff;
+  padding: 28px 0;
+  border-top: 1px solid #eee;
+  color: #111;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* contenedor centrado y layout en fila */
+.footer-content {
+  max-width: 1100px;        /* ajusta al ancho de tu diseño */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;      /* alinea verticalmente los items (clave para que el texto quede a la misma altura) */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* columna izquierda: icono grande + fila de pequeños */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* iconos pegados a la izquierda como en la foto */
+  gap: 12px;
+}
+
+/* icono de firma / logo en la parte superior */
+.brand-icon {
+  font-size: 40px;          /* más grande que los demás */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  text-decoration: none;
+  padding: 2px;
+}
+
+/* fila de iconos pequeños debajo */
+.small-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* estilos genéricos para los iconos (FA) */
+.social-icon {
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .18s ease;
+}
+
+/* hover */
+.social-icon:hover {
+  color: #666;
+}
+
+/* texto centrado en la zona media */
+.footer-text {
+  flex: 1;                  /* ocupa el espacio central para quedar exactamente en el centro horizontal */
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* espacio derecho para equilibrio (puedes eliminar si no lo necesitas) */
+.right-space {
+  width: 40px;              /* iguala visualmente la anchura de la columna izquierda */
+}
+
+/* adaptabilidad en móvil: apilar */
+@media (max-width: 720px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .left-column {
+    align-items: center;
+  }
+
+  .footer-text {
+    order: 2;
+    flex: none;
+  }
+
+  .right-space { display: none; }
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--color-light);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .about-button {
+    text-align: left;
+  }
+}
