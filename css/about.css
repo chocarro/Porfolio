@@ -1,0 +1,177 @@
+/* Igual estructura que contacto.css pero adaptado al contenido About */
+:root {
+  --font-family: "Inter", sans-serif;
+  --color-dark: #1E1E1E;
+  --color-light: #FBFBFB;
+  --color-gray: #f2f2f2;
+  --color-border: #ddd;
+  --container-width: 1200px;
+  --spacing-section: 4rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+/* HEADER */
+.header {
+  background: var(--color-light);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  width: 200px;
+  height: auto;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav-link {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+}
+/* HERO */
+.hero {
+  background: var(--color-gray);
+  padding: var(--spacing-section) 0;
+}
+.hero h1 {
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+.hero-subtitle {
+  margin-top: 1rem;
+  color: #444;
+}
+/* ABOUT SECTION */
+.about {
+  background: var(--color-light);
+  padding: var(--spacing-section) 0;
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+.about p {
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+.about-button {
+  text-align: left;
+}
+.about-button .btn-primary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  background: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* FOOTER igual que tu CSS proporcionado */
+.footer {
+  background: #fff;
+  padding: 28px 0;
+  border-top: 1px solid #eee;
+  color: #111;
+  font-family: var(--font-family);
+}
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.brand-icon {
+  font-size: 40px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  text-decoration: none;
+  padding: 2px;
+}
+.small-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.social-icon {
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .18s ease;
+}
+.social-icon:hover {
+  color: #666;
+}
+.footer-text {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+}
+.right-space {
+  width: 40px;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--color-light);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

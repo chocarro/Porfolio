@@ -13,35 +13,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-p{
-  color: #606060;
-}
-
-.p2{
-  margin-top: 20px;
-  color: #FBFBFB;
-}
-
 body {
   font-family: var(--font-family);
   color: var(--color-dark);
   background-color: var(--color-light);
   line-height: 1.6;
 }
-
-.hero-buttons a {
-  text-decoration: none; /* quita subrayado */
-  display: inline-block;
-}
-
 .container {
   width: 90%;
   max-width: var(--container-width);
   margin: 0 auto;
 }
-
-/* HEADER */
 .header {
   background: var(--color-light);
   border-bottom: 1px solid var(--color-border);
@@ -50,211 +32,104 @@ body {
   top: 0;
   z-index: 100;
 }
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   font-weight: 600;
   font-size: 1.3rem;
-  width: 200px;  
-    height: auto; 
+  width: 200px;
+  height: auto;
 }
-
 .nav {
   display: flex;
   gap: 2rem;
 }
-
 .nav-link {
   color: var(--color-dark);
   text-decoration: none;
   font-weight: 500;
 }
-
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   font-size: 1.8rem;
 }
-
-/* HERO */
 .hero {
   background: var(--color-gray);
   padding: var(--spacing-section) 0;
 }
-
 .hero h1 {
   font-weight: 300;
   font-size: 2.2rem;
-  max-width: 650px;
 }
-
 .hero-subtitle {
   margin-top: 1rem;
   color: #444;
 }
-
-.hero-buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-}
-
-/* BUTTONS */
-.btn-primary,
-.btn-outline,
-.btn-white {
-  padding: 0.8rem 1.8rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.btn-primary {
-  background: var(--color-dark);
-  color: var(--color-light);
-  border: none;
-}
-
-.btn-outline {
-  border: 1px solid var(--color-dark);
-  background: transparent;
-  color: var(--color-dark);
-}
-
-.btn-white {
-  background: var(--color-light);
-  color: var(--color-dark);
-  border: none;
-}
-
-/* FEATURES */
-.features {
-  background: var(--color-light);
-  padding: var(--spacing-section) 0;
-  text-align: center;
-}
-
-.features h2 {
-  text-transform: uppercase;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.feature-card {
-  background: var(--color-gray);
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-/* ABOUT */
-.about {
-  background: var(--color-gray);
-  padding: var(--spacing-section) 0;
-}
-
-.about h2 {
-  margin-bottom: 1rem;
-}
-
-.about p {
-  color: #444;
-  margin-bottom: 2rem;
-  max-width: 700px;
-}
-
-.about-button {
-  text-align: right;
-}
-
-/* PROJECTS */
 .projects {
   background: var(--color-light);
   padding: var(--spacing-section) 0;
 }
-
 .projects h2 {
   text-transform: uppercase;
 }
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .project-card {
   border: 1px solid var(--color-border);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--color-light);
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
 .project-img {
-  background: var(--color-gray);
   width: 100%;
   height: 180px;
   border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 1rem;
 }
 
-/* CTA */
-.cta {
-  background: var(--color-dark);
-  color: var(--color-light);
-  text-align: center;
-  padding: var(--spacing-section) 1rem;
-}
-
-.cta button {
-  margin-top: 1.5rem;
-}
-
-/* FOOTER */
-/* footer base */
+/* Footer igual que antes */
 .footer {
   background: #fff;
   padding: 28px 0;
   border-top: 1px solid #eee;
   color: #111;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: var(--font-family);
 }
-
-/* contenedor centrado y layout en fila */
 .footer-content {
-  max-width: 1100px;        /* ajusta al ancho de tu diseño */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  align-items: center;      /* alinea verticalmente los items (clave para que el texto quede a la misma altura) */
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-
-/* columna izquierda: icono grande + fila de pequeños */
 .left-column {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* iconos pegados a la izquierda como en la foto */
+  align-items: flex-start;
   gap: 12px;
 }
-
-/* icono de firma / logo en la parte superior */
 .brand-icon {
-  font-size: 40px;          /* más grande que los demás */
+  font-size: 40px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -263,15 +138,11 @@ body {
   text-decoration: none;
   padding: 2px;
 }
-
-/* fila de iconos pequeños debajo */
 .small-icons {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-
-/* estilos genéricos para los iconos (FA) */
 .social-icon {
   color: #111;
   font-size: 20px;
@@ -281,49 +152,17 @@ body {
   justify-content: center;
   transition: color .18s ease;
 }
-
-/* hover */
 .social-icon:hover {
   color: #666;
 }
-
-/* texto centrado en la zona media */
 .footer-text {
-  flex: 1;                  /* ocupa el espacio central para quedar exactamente en el centro horizontal */
-  margin: 0;
+  flex: 1;
   text-align: center;
   font-size: 16px;
 }
-
-/* espacio derecho para equilibrio (puedes eliminar si no lo necesitas) */
 .right-space {
-  width: 40px;              /* iguala visualmente la anchura de la columna izquierda */
+  width: 40px;
 }
-
-/* adaptabilidad en móvil: apilar */
-@media (max-width: 720px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 14px;
-  }
-
-  .left-column {
-    align-items: center;
-  }
-
-  .footer-text {
-    order: 2;
-    flex: none;
-  }
-
-  .right-space { display: none; }
-}
-
-
-
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -337,17 +176,11 @@ body {
     border-radius: 0.5rem;
     padding: 1rem;
   }
-
   .nav.active {
     display: flex;
   }
-
   .menu-toggle {
     display: block;
-  }
-
-  .about-button {
-    text-align: left;
   }
 }
 

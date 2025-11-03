@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocarro | Proyectos</title>
+  <link rel="stylesheet" href="../css/proyectos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <img class="logo" src="../Imagenes/logo.png" alt="Chocarro Logo">
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="proyectos.html" class="nav-link">Proyectos</a>
+        <a href="Contacto.html" class="nav-link">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Nuestros Proyectos</h1>
+      <h3 class="hero-subtitle">Algunos de nuestros trabajos destacados</h3>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects">
+    <div class="container">
+      <h2>ALGUNOS PROYECTOS</h2>
+      <div class="projects-grid">
+
+        <!-- Tablero Kanban -->
+        <div class="project-card">
+          <a href="https://chocarro.github.io/Tablero-Kanban/" target="_blank">
+            <img src="../Imagenes/TableroKanban.png" alt="Tablero Kanban" class="project-img">
+            <h3>Tablero Kanban</h3>
+          </a>
+          <p>Una herramienta gráfica para la administración de proyectos que emplea columnas y tarjetas para mostrar
+            las fases de un flujo de trabajo y el avance de cada tarea.</p>
+        </div>
+
+        <!-- Figma -->
+        <div class="project-card">
+          <a href="https://www.figma.com/design/ssmaDV7bGOhgxvn8pv5dkp/Porfolio-DAW?node-id=0-1&t=x9xFTTS9EBVqVERq-1" target="_blank">
+            <img src="../Imagenes/Figma.png" alt="Figma" class="project-img">
+            <h3>Figma</h3>
+          </a>
+          <p>Guía de estilo corporativa y propuesta para prototipo de porfolio.</p>
+        </div>
+
+        <!-- Proyectos de ejemplo -->
+        <div class="project-card">
+          <div class="project-img"></div>
+          <h3>Proyecto 3</h3>
+          <p>Descripción breve del proyecto 3.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-img"></div>
+          <h3>Proyecto 4</h3>
+          <p>Descripción breve del proyecto 4.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="left-column">
+        <a href="#" class="brand-icon social-icon"><i class="fa-brands fa-figma"></i></a>
+        <div class="small-icons">
+          <a href="https://x.com/Luciaa_garrido" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/chocarroo/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lucía-garrido-chocarro-7401b2314/" class="social-icon"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <p class="footer-text">© 2025 Chocarro. Todos los derechos reservados.</p>
+      <div class="right-space" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+</body>
+</html>

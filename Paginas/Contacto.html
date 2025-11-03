@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocarro | Contacto</title>
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <img class="logo" src="../Imagenes/logo.png" alt="Chocarro Logo">
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="proyectos.html" class="nav-link">Proyectos</a>
+        <a href="Contacto.html" class="nav-link">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Contáctanos</h1>
+      <h3 class="hero-subtitle">Estamos listos para escuchar tus ideas y ayudarte a hacerlas realidad</h3>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+   <br><br>
+  <section class="about">
+    <div class="container">
+      <h2>Envíanos un mensaje</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+<br><br>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="left-column">
+        <a href="#" class="brand-icon social-icon"><i class="fa-brands fa-figma"></i></a>
+        <div class="small-icons">
+          <a href="https://x.com/Luciaa_garrido" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/chocarroo/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lucía-garrido-chocarro-7401b2314/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <p class="footer-text">© 2025 Chocarro. Todos los derechos reservados.</p>
+      <div class="right-space" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+</body>
+</html>

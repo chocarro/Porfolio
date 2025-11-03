@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,14 +12,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container header-container">
-     <img class="logo" src="Imagenes/logo.png" alt=""> 
+      <img class="logo" src="Imagenes/logo.png" alt="">
       <nav class="nav" id="nav">
-        <a href="#" class="nav-link">Servicios</a>
-        <a href="#" class="nav-link">Proyectos</a>
-        <a href="#" class="nav-link">Contacto</a>
+        <a href="Paginas/Servicios.html" class="nav-link">Servicios</a>
+        <a href="Paginas/proyectos.html" class="nav-link">Proyectos</a>
+        <a href="Paginas/Contacto.html" class="nav-link">Contacto</a>
       </nav>
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
@@ -30,8 +32,10 @@
         <h1>Diseñamos experiencias y productos digitales que transforman ideas en resultados.</h1>
         <h3 class="hero-subtitle">Impulsa tu negocio con soluciones digitales efectivas</h3>
         <div class="hero-buttons">
-          <button class="btn-primary">SERVICIOS</button>
-          <button class="btn-outline">ABOUT</button>
+<div class="hero-buttons">
+  <a href="Paginas/Servicios.html" class="btn-primary">SERVICIOS</a>
+  <a href="Paginas/About.html" class="btn-outline">ABOUT</a>
+</div>
         </div>
       </div>
     </section>
@@ -64,49 +68,54 @@
             <b>Diseño, desarrollo y estrategia enfocados en crear experiencias digitales de alto impacto.</b>
           </h3>
           <div class="about-button">
-            <button class="btn-primary">DESCUBRE MÁS</button>
+            <button href="Paginas/About.html" class="btn-primary">DESCUBRE MÁS</button>
           </div>
         </div>
       </div>
     </section>
 
     <section class="projects">
-      <div class="container">
-        <h2>ALGUNOS PROYECTOS</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-img"></div>
-            <h3>Title</h3>
-            <p>Body text for whatever you'd like to say. Add main takeaways, points, quotes, or even a very short story.</p>
-          </div>
-        </div>
+  <div class="container">
+    <h2>ALGUNOS PROYECTOS</h2>
+    <div class="projects-grid">
+
+      <!-- Tablero Kanban -->
+      <div class="project-card">
+        <a href="Paginas/proyectos.html" target="_blank">
+          <a href="https://chocarro.github.io/Tablero-Kanban/" target="_blank">
+            <img src="Imagenes/TableroKanban.png" alt="Tablero Kanban" class="project-img">
+            <h3>Tablero Kanban</h3>
+          </a>
+        </a>
+        <p>Una herramienta gráfica para la administración de proyectos que emplea columnas y tarjetas para mostrar
+          las fases de un flujo de trabajo y el avance de cada tarea.</p>
       </div>
-    </section>
+
+      <!-- Figma -->
+      <div class="project-card">
+        <a href="https://www.figma.com/design/ssmaDV7bGOhgxvn8pv5dkp/Porfolio-DAW?node-id=0-1&t=x9xFTTS9EBVqVERq-1" target="_blank">
+          <img src="Imagenes/Figma.png" alt="Figma" class="project-img">
+          <h3>Figma</h3>
+        </a>
+        <p>Guía de estilo corporativa y propuesta para prototipo de porfolio.</p>
+      </div>
+
+      <!-- Proyectos de ejemplo -->
+      <div class="project-card">
+        <div class="project-img"></div>
+        <h3>Proyecto 3</h3>
+        <p>Descripción breve del proyecto 3.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-img"></div>
+        <h3>Proyecto 4</h3>
+        <p>Descripción breve del proyecto 4.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <section class="cta">
       <div class="container">
@@ -117,27 +126,29 @@
     </section>
   </main>
 
-<footer class="footer">
-  <div class="container footer-content">
-    <!-- Columna izquierda: icono grande arriba + fila de iconos debajo -->
-    <div class="left-column">
-      <a href="#" class="brand-icon social-icon"><i class="fa-brands fa-figma"></i></a>
+  <footer class="footer">
+    <div class="container footer-content">
+      <!-- Columna izquierda: icono grande arriba + fila de iconos debajo -->
+      <div class="left-column">
+        <a href="#" class="brand-icon social-icon"><i class="fa-brands fa-figma"></i></a>
 
-      <div class="small-icons">
-        <a href="https://x.com/Luciaa_garrido" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/chocarroo/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/lucía-garrido-chocarro-7401b2314/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="small-icons">
+          <a href="https://x.com/Luciaa_garrido" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/chocarroo/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lucía-garrido-chocarro-7401b2314/" class="social-icon"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
+
+      <!-- Texto centrado, ocupa el espacio central -->
+      <p class="footer-text">© 2025 Chocarro. Todos los derechos reservados.</p>
+
+      <!-- columna derecha vacía para equilibrio (opcional) -->
+      <div class="right-space" aria-hidden="true"></div>
     </div>
-
-    <!-- Texto centrado, ocupa el espacio central -->
-    <p class="footer-text">© 2025 Chocarro. Todos los derechos reservados.</p>
-
-    <!-- columna derecha vacía para equilibrio (opcional) -->
-    <div class="right-space" aria-hidden="true"></div>
-  </div>
-</footer>
+  </footer>
 
 
 </body>
+
 </html>
